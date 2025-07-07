@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="midia/cyberia_mix.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Music Loop</title>
+    <title>INFANiTy world</title>
 </head>
-<body onload="intro()">
-    <h1>song name: INFANiTy world</h1>
-    <h2>Sim, eu sei que tá faltando o css. Vou fazer isso em algum outro momento. Meu foco inicial é a funcionalidade</h2>
+<body onload="intro()" class="bg-primary">
+    
 
-    <button onclick="end()" id="btn"></button>
+    <div class="container-fluid d-flex justify-content-center align-items-center flex-column">
+        <h1 class="fs-4 fs-md-3 fs-lg-1">Song: INFANiTy world</h1>
+        <h1 class="fs-6 fs-md-4 fs-lg-2">Album: 『serial experiments lain』：Cyberia Mix</h1>
+        <img src="midia/cyberia_mix.jpg" class="mt-5 img-fluid w-25" alt="capa">
 
-    <img src="midia/cyberia_mix.jpg" alt="">
+        <div class="d-flex flex-row align-items-center mt-5">
+            <button onclick="end()" id="btn" class="rounded-3 px-4 py-2 px-md-5 py-md-3 me-3"></button>
+            <p class="mb-0">Current loop: <span id="loopCount"></span></p>
+        </div>
+        
+    </div>
+
+    
 
     <script src="script.js"></script>
 
